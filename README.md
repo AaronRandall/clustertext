@@ -1,29 +1,5 @@
 # Clustertext
 
-TODO: Write a gem description
+Cluster text files based on content.  Requires textfiles with unique filenames (which act as identifiers).
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'clustertext'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install clustertext
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Don't use it, it was thrown together quickly as an experiment.  I may (not) come back and rewrite this one day if it has any potential use.
