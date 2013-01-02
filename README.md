@@ -1,4 +1,4 @@
-# Clustertext
+# clustertext
 
 Cluster text files based on content.  Requires textfiles with unique filenames (which act as identifiers).
 
