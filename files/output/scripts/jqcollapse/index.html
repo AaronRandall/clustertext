@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="jquery.easing.js"></script>
+		<script type="text/javascript" src="jquery.collapse.js"></script>
+		<script type="text/javascript">
+			
+			$(function(){
+				
+				$('#collapser').jqcollapse({
+				   slide: true,
+				   speed: 1000,
+				   easing: 'easeOutCubic'
+				});
+				
+			});
+			
+		</script>
+		<style>
+			body { width: 500px; margin: 100px auto; font: normal 14px Arial, Helvetica, sans-serif; }
+			ul { margin: 0; padding: 0; }
+			ul li { margin: 10px 0 10px 25px; padding: 0; list-style: none; }
+			
+			.jqcNode { font-weight: bold; color: green; }
+		</style>
+	</head>
+	<body>
+		
+		<h1>Simple jQuery UL Collapser</h1>
+		
+		<ul id="collapser">
+		  <li>Item 1
+		    <ul>
+		      <li>Item 1.1</li>
+		      <li>Item 1.2
+			 	<ul>
+			 		<li>Item 1.2.1</li>
+					<li>Item 1.2.2</li>
+			 	</ul> 	
+			  </li>
+		      <li>Item 1.3</li>
+		    </ul>
+		  </li>
+		  <li>Item 2
+		    <ul>
+		      <li>Item 2.1
+		        <ul>
+		          <li>Item 2.1.1</li>
+		          <li>Item 2.2.2</li>
+		        </ul>
+		      </li>
+		    </ul>
+		  </li>
+		  <li>Item 3</li>
+		</ul>
+		
+	</body>
+</html>

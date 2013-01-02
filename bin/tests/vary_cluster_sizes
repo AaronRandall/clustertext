@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+puts "** vary cluster sizes **"
+
+(5..50).each do |cluster_size| 
+  system "bundle exec ../clustertext --cluster-size=#{cluster_size} --output-filename=output_#{cluster_size}.html"
+end

@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/clustertext', __FILE__)
+require 'trollop'
+
+opts = Trollop::options do
+  opt :input_path, "Input path", :type => :string, :default => "/Users/aaron/src/clustertext/files/feature_requests/"
+  opt :output_path, "Output path", :type => :string, :default => "/Users/aaron/src/clustertext/files/output/"
+  opt :output_filename, "Output filename", :type => :string, :default => "output.html"
+  opt :debug, "Debug", :type => :boolean, :default => true
+  opt :correct_spelling, "Correct spelling", :type => :boolean, :default => false
+  opt :remove_email_signatures, "Remove email signatures", :type => :boolean, :default => true
+  opt :remove_stopwords, "Remove stopwords", :type => :boolean, :default => true
+  opt :singularise_words, "Singularise words", :type => :boolean, :default => true
+  opt :calculate_tfidf, "Calculate TF-IDF", :type => :boolean, :default => false
+  opt :kmeans_cluster, "K-Means cluster", :type => :boolean, :default => true 
+  opt :cluster_size, "Cluster size", :type => :int, :default => 20
+  opt :cluster_group_keyword_count, "Cluster group keyword count", :type => :int, :default => 3
+end
+
+ClusterText.process(opts)
+exit
