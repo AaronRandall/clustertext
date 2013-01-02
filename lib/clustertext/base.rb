@@ -2,7 +2,7 @@
 
 module ClusterText
 
-  DESK_CASE_LINK = "https://songkick.desk.com/agent/case/"
+  DESK_CASE_LINK = "YOUR_URL_HERE"
   CLUSTER_KEYWORD_MAX_SIZE = 10
 
   # ToDo:
